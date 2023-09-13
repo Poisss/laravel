@@ -1,0 +1,6 @@
+Путь
+cd domains
+cd laravel
+
+Создание контролера
+php artisan make:controller ExController
