@@ -4,6 +4,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\ExController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -107,3 +108,6 @@ Route::get('/', function () {
 Route::get('/test/test/{param}', [TestController::class,'test']);
 Route::get('/test/show/{param}', [ExController::class,'show']);
 Route::get('/test/show/user/{param}', [EmployeeController::class,'show']);
+Route::get('/music', [MainController::class,'asMusic']);
+Route::get('/music/team/{idTeam}', [MainController::class,'asTeam']);
+Route::get('/test/views', [EmployeeController::class,'showTest']);

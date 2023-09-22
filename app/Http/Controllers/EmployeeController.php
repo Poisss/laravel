@@ -52,4 +52,7 @@ class EmployeeController extends Controller
             return 'Страница не существует';
         } 
     }
+    public function showTest(){
+        return view('test',['name'=>'Вася','age'=>'18','salary'=>'15000']);
+    }
 }
